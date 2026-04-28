@@ -155,7 +155,33 @@
         </label>
       </div>
       <div class="step-actions">
-        <button class="btn-primary" id="toStep2" disabled>Devam Et →</button>
+        <a href="atlas.html" class="btn-atlas-ask">
+          <svg width="28" height="33" viewBox="0 0 220 260" fill="none">
+            <path d="M110 20 C110 20 48 72 48 138 C48 176 75 205 110 208 C145 205 172 176 172 138 C172 72 110 20 110 20Z" fill="url(#atlasAsk)"/>
+            <ellipse cx="88" cy="105" rx="16" ry="26" fill="rgba(255,255,255,0.22)" transform="rotate(-20 88 105)"/>
+            <ellipse cx="92" cy="148" rx="10" ry="9" fill="white"/>
+            <circle cx="94" cy="149" r="5.5" fill="#0A1628"/><circle cx="96" cy="147" r="1.8" fill="white"/>
+            <ellipse cx="128" cy="148" rx="10" ry="9" fill="white"/>
+            <circle cx="130" cy="149" r="5.5" fill="#0A1628"/><circle cx="132" cy="147" r="1.8" fill="white"/>
+            <path d="M100 170 Q110 178 120 170" stroke="white" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+            <path d="M52 140 Q34 128 38 112" stroke="url(#askArm1)" stroke-width="11" stroke-linecap="round" fill="none"/>
+            <circle cx="37" cy="110" r="7" fill="url(#askArm1)"/>
+            <path d="M168 140 Q186 128 182 112" stroke="url(#askArm2)" stroke-width="11" stroke-linecap="round" fill="none"/>
+            <circle cx="183" cy="110" r="7" fill="url(#askArm2)"/>
+            <defs>
+              <linearGradient id="atlasAsk" x1="48" y1="20" x2="172" y2="208" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#60A5FA"/><stop offset="55%" stop-color="#2563EB"/><stop offset="100%" stop-color="#1A40A8"/>
+              </linearGradient>
+              <linearGradient id="askArm1" x1="52" y1="140" x2="34" y2="108" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#60A5FA"/>
+              </linearGradient>
+              <linearGradient id="askArm2" x1="168" y1="140" x2="186" y2="108" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#60A5FA"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          Atlas'a Sor
+        </a>
       </div>
     </div>
 
@@ -180,15 +206,7 @@
           <input class="field-input" type="text" id="adSoyad" placeholder="Ahmet Yılmaz">
         </div>
         <div class="field-group">
-          <label class="field-label">Telefon</label>
-          <input class="field-input" type="tel" id="telefon" placeholder="0532 123 45 67">
-        </div>
-        <div class="field-group">
-          <label class="field-label">E-posta</label>
-          <input class="field-input" type="email" id="eposta" placeholder="ahmet@ornek.com">
-        </div>
-        <div class="field-group">
-          <label class="field-label">Ek notlar (isteğe bağlı)</label>
+          <label class="field-label">Ek notlar <span class="optional-tag">isteğe bağlı</span></label>
           <textarea class="field-input" id="notlar" rows="3" placeholder="Özel bir isteğiniz varsa yazabilirsiniz..."></textarea>
         </div>
         <label class="checkbox-label">
@@ -222,13 +240,9 @@
             </defs>
           </svg>
         </div>
-        <h2>Harika! Talebinizi aldık. 🎉</h2>
-        <p>Atlas teklifinizi hazırlıyor. En kısa sürede sizi arayacağız.</p>
-        <div class="success-info">
-          <div class="si-item">⏱️ Ortalama geri dönüş süresi: <strong>15 dakika</strong></div>
-          <div class="si-item">📱 Sizi <strong id="successPhone">—</strong> numarasından arayacağız.</div>
-        </div>
-        <a href="index.html" class="btn-secondary" style="margin-top:8px;">Ana Sayfaya Dön</a>
+        <h2>Bildiriminiz alındı! 🎉</h2>
+        <p>En kısa sürede dönüş yapılacaktır.</p>
+        <a href="index.html" class="btn-secondary" style="margin-top:16px;">Ana Sayfaya Dön</a>
       </div>
     </div>
 

@@ -233,6 +233,96 @@ select.field-input { cursor: pointer; appearance: none; }
 }
 .trust-item span { color: var(--text); }
 
+/* OPTIONAL TAG */
+.optional-tag {
+  font-size: 11px; font-weight: 400; color: var(--muted);
+  background: rgba(90,122,158,0.12);
+  border-radius: 6px; padding: 2px 8px;
+  margin-left: 6px; vertical-align: middle;
+}
+
+/* FILE UPLOAD */
+.upload-area {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 6px; padding: 28px 20px;
+  border: 1.5px dashed rgba(59,130,246,0.25);
+  border-radius: 14px;
+  background: rgba(8,17,31,0.4);
+  cursor: pointer; transition: border-color .2s, background .2s;
+}
+.upload-area:hover, .upload-area.drag-over {
+  border-color: var(--sky);
+  background: rgba(26,86,219,0.08);
+}
+.upload-icon { font-size: 24px; }
+.upload-text { font-size: 14px; color: var(--text); }
+.upload-hint { font-size: 12px; color: var(--muted); }
+.uploaded-files { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.file-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(26,86,219,0.12);
+  border: 1px solid rgba(59,130,246,0.2);
+  border-radius: 8px; padding: 5px 12px;
+  font-size: 13px; color: var(--ice);
+}
+.file-chip span { color: var(--muted); font-size: 11px; }
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  display: flex; align-items: center; gap: 14px;
+  background: rgba(37,211,102,0.08);
+  border: 1px solid rgba(37,211,102,0.25);
+  border-radius: 16px; padding: 16px 20px;
+  text-decoration: none; margin-top: 8px;
+  transition: background .2s, border-color .2s, transform .15s;
+}
+.whatsapp-btn:hover {
+  background: rgba(37,211,102,0.14);
+  border-color: rgba(37,211,102,0.45);
+  transform: translateY(-2px);
+}
+.wa-atlas { flex-shrink: 0; }
+.wa-atlas svg { animation: float 5s ease-in-out infinite; }
+.wa-content { flex: 1; }
+.wa-title {
+  font-family: 'Syne', sans-serif; font-weight: 700;
+  font-size: 14px; color: #25D366;
+}
+.wa-sub { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.wa-icon { flex-shrink: 0; opacity: .8; }
+
+/* ATLAS'A SOR BUTONU */
+.btn-atlas-ask {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(26,86,219,0.12);
+  border: 1px solid rgba(59,130,246,0.3);
+  border-radius: 12px; padding: 11px 22px;
+  font-size: 14px; font-weight: 500; color: var(--ice);
+  text-decoration: none;
+  transition: background .2s, border-color .2s, transform .15s;
+}
+.btn-atlas-ask:hover {
+  background: rgba(26,86,219,0.22);
+  border-color: var(--sky);
+  color: white; transform: translateY(-1px);
+}
+.btn-atlas-ask svg { animation: float 5s ease-in-out infinite; }
+
+/* SUCCESS ACTIONS */
+.success-actions {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  width: 100%; margin-top: 8px;
+}
+.btn-email-send {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(59,130,246,0.1);
+  border: 1px solid rgba(59,130,246,0.25);
+  border-radius: 12px; padding: 12px 24px;
+  font-size: 14px; color: var(--ice); text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+.btn-email-send:hover { background: rgba(59,130,246,0.2); border-color: var(--sky); color: white; }
+
 /* Nav cta active */
 .active-cta { background: var(--sky) !important; }
 
