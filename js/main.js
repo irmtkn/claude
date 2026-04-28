@@ -41,11 +41,22 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => obs.observe(el));
   }
 
-  // ── Animate hero on load ──
-  document.body.style.opacity = '0';
-  document.body.style.transition = 'opacity .4s ease';
-  requestAnimationFrame(() => {
-    document.body.style.opacity = '1';
-  });
+  // ── Intro video ──
+  const introScreen = document.getElementById('intro-screen');
+  const introVideo  = document.getElementById('intro-video');
+  const introSkip   = document.getElementById('intro-skip');
+
+  function dismissIntro() {
+    if (!introScreen) return;
+    introScreen.classList.add('done');
+  }
+
+  if (introVideo) {
+    introVideo.addEventListener('ended', dismissIntro);
+    introVideo.play().catch(dismissIntro);
+  }
+  if (introSkip) {
+    introSkip.addEventListener('click', dismissIntro);
+  }
 
 });
