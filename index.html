@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rem Sigorta — Yeni Nesil Dijital Sigorta Acentesi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/hakkimizda.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="grid-overlay"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <svg width="32" height="32" viewBox="0 0 72 72" fill="none">
+      <rect width="72" height="72" rx="14" fill="white"/>
+      <rect x="16" y="14" width="7" height="44" fill="#08111F"/>
+      <path d="M16 14 H38 Q50 14 50 25.5 Q50 37 38 37 H16Z" fill="#08111F"/>
+      <path d="M23 20 H36 Q43 20 43 25.5 Q43 31 36 31 H23Z" fill="white"/>
+      <path d="M33 37 L50 37 L50 58 L42 58 L26 37Z" fill="#08111F"/>
+      <circle cx="58" cy="56" r="5" fill="#3B82F6"/>
+    </svg>
+    <div class="nav-brand">rem<span class="dot">.</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active">Hakkımızda</a>
+    <a href="atlas.html" class="nav-link">Atlas</a>
+    <a href="teklif.html" class="nav-cta">Teklif Al →</a>
+  </div>
+  <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-menu" id="mobileMenu">
+  <a href="index.html" class="nm-link active">Hakkımızda</a>
+  <a href="atlas.html" class="nm-link">Atlas</a>
+  <a href="teklif.html" class="nm-cta">Teklif Al →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">🇹🇷 Türkiye'nin Dijital Sigorta Acentesi</div>
+    <h1 class="hero-title">
+      Sigorta artık<br>
+      <span class="accent">seninle akar.</span>
+    </h1>
+    <p class="hero-sub">Rem Sigorta, yapay zeka destekli platformu ve insan odaklı yaklaşımıyla sigorta süreçlerini basit, hızlı ve şeffaf hale getirir.</p>
+    <div class="hero-actions">
+      <a href="teklif.html" class="btn-primary">Teklif Al</a>
+      <a href="atlas.html" class="btn-secondary">Atlas'ı Tanı →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">10K+</span><span class="stat-lbl">Mutlu Müşteri</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">98%</span><span class="stat-lbl">Memnuniyet</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">24/7</span><span class="stat-lbl">Destek</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card-glow"></div>
+    <div class="floating-card fc-1">
+      <div class="fc-icon">🛡️</div>
+      <div class="fc-text"><strong>Kasko Poliçen</strong><br><small>Aktif · 12 ay</small></div>
+      <div class="fc-badge green">✓ Aktif</div>
+    </div>
+    <div class="floating-card fc-2">
+      <div class="fc-icon">💧</div>
+      <div class="fc-text"><strong>Atlas</strong><br><small>Size en uygun teklifi buluyorum…</small></div>
+    </div>
+    <div class="floating-card fc-3">
+      <div class="fc-icon">⚡</div>
+      <div class="fc-text"><strong>Anında Onay</strong><br><small>Dakikalar içinde</small></div>
+      <div class="fc-badge blue">Yeni</div>
+    </div>
+    <svg class="hero-atlas-mini" width="180" height="210" viewBox="0 0 220 260" fill="none">
+      <ellipse cx="110" cy="248" rx="55" ry="11" fill="rgba(26,86,219,0.18)"/>
+      <path d="M110 20 C110 20 48 72 48 138 C48 176 75 205 110 208 C145 205 172 176 172 138 C172 72 110 20 110 20Z" fill="url(#ahero)"/>
+      <ellipse cx="88" cy="105" rx="16" ry="26" fill="rgba(255,255,255,0.22)" transform="rotate(-20 88 105)"/>
+      <ellipse cx="92" cy="148" rx="10" ry="9" fill="white"/>
+      <circle cx="94" cy="149" r="5.5" fill="#0A1628"/><circle cx="96" cy="147" r="1.8" fill="white"/>
+      <ellipse cx="128" cy="148" rx="10" ry="9" fill="white"/>
+      <circle cx="130" cy="149" r="5.5" fill="#0A1628"/><circle cx="132" cy="147" r="1.8" fill="white"/>
+      <path d="M100 170 Q110 178 120 170" stroke="white" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+      <path d="M52 140 Q34 128 38 112" stroke="url(#ha1)" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <circle cx="37" cy="110" r="7" fill="url(#ha1)"/>
+      <path d="M168 140 Q186 128 182 112" stroke="url(#ha2)" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <circle cx="183" cy="110" r="7" fill="url(#ha2)"/>
+      <path d="M110 178 L102 182 V189 C102 194 105.6 198 110 199.5 C114.4 198 118 194 118 189 V182 Z" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+      <text x="110" y="193" text-anchor="middle" font-family="'Syne',sans-serif" font-weight="800" font-size="9" fill="white" opacity="0.9">R</text>
+      <defs>
+        <linearGradient id="ahero" x1="48" y1="20" x2="172" y2="208" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#60A5FA"/><stop offset="55%" stop-color="#2563EB"/><stop offset="100%" stop-color="#1A40A8"/>
+        </linearGradient>
+        <linearGradient id="ha1" x1="52" y1="140" x2="34" y2="108" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#60A5FA"/>
+        </linearGradient>
+        <linearGradient id="ha2" x1="168" y1="140" x2="186" y2="108" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#60A5FA"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+<!-- NEDEN REM -->
+<section class="why-section">
+  <div class="container">
+    <div class="section-label">Neden Rem Sigorta?</div>
+    <h2 class="section-title">Sigortacılığı<br><em>yeniden yazdık.</em></h2>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">🤖</div>
+        <h3>Yapay Zeka Destekli</h3>
+        <p>Atlas, ihtiyaçlarınızı analiz ederek size en uygun poliçeyi saniyeler içinde bulur. Karmaşık formlar yok.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">⚡</div>
+        <h3>Anında İşlem</h3>
+        <p>Poliçenizi çıkarın, değiştirin veya iptal edin — tüm işlemler dakikalar içinde tamamlanır.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🔍</div>
+        <h3>Tam Şeffaflık</h3>
+        <p>Gizli ücret yok, küçük punto yok. Poliçenizin her detayı sade bir dille anlatılır.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🤝</div>
+        <h3>İnsan Dokunuşu</h3>
+        <p>Teknoloji güçlü, ama bazen bir insan sesi gerekir. Uzman ekibimiz her zaman yanınızda.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">📱</div>
+        <h3>Her Cihazda</h3>
+        <p>Telefon, tablet, bilgisayar — sigorta işlemlerinizi istediğiniz cihazdan kolayca yönetin.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🛡️</div>
+        <h3>Güvenli & Lisanslı</h3>
+        <p>Hazine ve Maliye Bakanlığı lisanslı acente. Verileriniz en üst düzey güvenlik standartlarıyla korunur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÜRÜNLER -->
+<section class="products-section">
+  <div class="container">
+    <div class="section-label">Sigorta Ürünlerimiz</div>
+    <h2 class="section-title">Her ihtiyaca<br><em>doğru çözüm.</em></h2>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="product-icon">🚗</div>
+        <h3>Kasko & Trafik</h3>
+        <p>Aracınız için kapsamlı koruma. Hasar, hırsızlık ve üçüncü şahıs teminatları tek poliçede.</p>
+        <a href="teklif.html" class="product-link">Teklif Al →</a>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-icon">🏠</div>
+        <h3>Konut</h3>
+        <p>Evinizi doğal afetlerden, yangından ve hırsızlıktan koruyun. Eşyalarınız dahil.</p>
+        <a href="teklif.html" class="product-link">Teklif Al →</a>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-icon">❤️</div>
+        <h3>Sağlık</h3>
+        <p>Özel hastane avantajları, diş, göz ve tamamlayıcı sağlık paketleriyle tam güvence.</p>
+        <a href="teklif.html" class="product-link">Teklif Al →</a>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-icon">✈️</div>
+        <h3>Seyahat</h3>
+        <p>Yurt içi ve yurt dışı seyahatlerinizde sağlık, bagaj ve iptal teminatı.</p>
+        <a href="teklif.html" class="product-link">Teklif Al →</a>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-icon">💼</div>
+        <h3>İşyeri</h3>
+        <p>İşletmenizi, stoklarınızı ve çalışanlarınızı tek çatı altında koruyun.</p>
+        <a href="teklif.html" class="product-link">Teklif Al →</a>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-icon">🐾</div>
+        <h3>Evcil Hayvan</h3>
+        <p>Tüylü dostunuz için veteriner masrafları ve sağlık sigortası.</p>
+        <a href="teklif.html" class="product-link">Teklif Al →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATLAS TANITIM -->
+<section class="atlas-promo">
+  <div class="container">
+    <div class="atlas-promo-inner reveal">
+      <div class="atlas-promo-text">
+        <div class="section-label">Yapay Zeka Asistanımız</div>
+        <h2>Atlas ile tanış.</h2>
+        <p>Bir buluttan düştü, sigorta uzmanı oldu. Atlas, size en doğru soruyu sorar — hangi sigorta, ne kadar, ne zaman. Dakikalar içinde netleştirir.</p>
+        <a href="atlas.html" class="btn-primary">Atlas'ı Tanı →</a>
+      </div>
+      <div class="atlas-promo-visual">
+        <div class="atlas-chat">
+          <div class="chat-bubble bot">Merhaba! 👋 Hangi sigorta için teklif almak istersiniz?</div>
+          <div class="chat-bubble user">Kasko almayı düşünüyorum.</div>
+          <div class="chat-bubble bot">Harika! 🚗 Arabanızın markası ve yılı nedir?</div>
+          <div class="chat-bubble user">2021 Toyota Corolla</div>
+          <div class="chat-bubble bot typing">Atlas yazıyor<span class="dots"><span>.</span><span>.</span><span>.</span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÜŞTERİ GÖRÜŞLERİ -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-label">Müşteri Görüşleri</div>
+    <h2 class="section-title">Onlar <em>anlattı.</em></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Kasko teklifimi 3 dakikada aldım. Atlas gerçekten çok kullanışlı, her şeyi sade anlatıyor."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AK</div>
+          <div><strong>Ahmet K.</strong><br><small>İstanbul</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Sigorta işlerinden her zaman korkardım. Rem Sigorta ile ilk kez gerçekten anladım ne satın aldığımı."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SY</div>
+          <div><strong>Selin Y.</strong><br><small>Ankara</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Hasar ihbarı için uğraştığımı düşünürdüm. Rem Sigorta ile tek mesajda çözüldü. Müthiş."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MÖ</div>
+          <div><strong>Murat Ö.</strong><br><small>İzmir</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2>Sigortan hazır mı?</h2>
+      <p>Dakikalar içinde teklif al, Atlas sana en doğru seçeneği bulsun.</p>
+      <a href="teklif.html" class="btn-primary btn-large">Ücretsiz Teklif Al →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html">
+          <svg width="28" height="28" viewBox="0 0 72 72" fill="none">
+            <rect width="72" height="72" rx="14" fill="white"/>
+            <rect x="16" y="14" width="7" height="44" fill="#08111F"/>
+            <path d="M16 14 H38 Q50 14 50 25.5 Q50 37 38 37 H16Z" fill="#08111F"/>
+            <path d="M23 20 H36 Q43 20 43 25.5 Q43 31 36 31 H23Z" fill="white"/>
+            <path d="M33 37 L50 37 L50 58 L42 58 L26 37Z" fill="#08111F"/>
+            <circle cx="58" cy="56" r="5" fill="#3B82F6"/>
+          </svg>
+          <div class="nav-brand">rem<span class="dot">.</span></div>
+        </a>
+        <p>Yeni nesil dijital sigorta acentesi. Hızlı, şeffaf, güvenilir.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Sayfalar</h4>
+          <a href="index.html">Hakkımızda</a>
+          <a href="atlas.html">Atlas</a>
+          <a href="teklif.html">Teklif Al</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ürünler</h4>
+          <a href="teklif.html">Kasko</a>
+          <a href="teklif.html">Sağlık</a>
+          <a href="teklif.html">Konut</a>
+          <a href="teklif.html">Seyahat</a>
+        </div>
+        <div class="footer-col">
+          <h4>İletişim</h4>
+          <a href="mailto:info@remsigorta.com">info@remsigorta.com</a>
+          <a href="tel:+908501234567">0850 123 45 67</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Rem Sigorta. Tüm hakları saklıdır.</p>
+      <p>Hazine ve Maliye Bakanlığı Lisanslı Sigorta Acentesi</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

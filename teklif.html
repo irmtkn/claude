@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teklif Al — Rem Sigorta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/teklif.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="grid-overlay"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <svg width="32" height="32" viewBox="0 0 72 72" fill="none">
+      <rect width="72" height="72" rx="14" fill="white"/>
+      <rect x="16" y="14" width="7" height="44" fill="#08111F"/>
+      <path d="M16 14 H38 Q50 14 50 25.5 Q50 37 38 37 H16Z" fill="#08111F"/>
+      <path d="M23 20 H36 Q43 20 43 25.5 Q43 31 36 31 H23Z" fill="white"/>
+      <path d="M33 37 L50 37 L50 58 L42 58 L26 37Z" fill="#08111F"/>
+      <circle cx="58" cy="56" r="5" fill="#3B82F6"/>
+    </svg>
+    <div class="nav-brand">rem<span class="dot">.</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Hakkımızda</a>
+    <a href="atlas.html" class="nav-link">Atlas</a>
+    <a href="teklif.html" class="nav-cta active-cta">Teklif Al →</a>
+  </div>
+  <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-menu" id="mobileMenu">
+  <a href="index.html" class="nm-link">Hakkımızda</a>
+  <a href="atlas.html" class="nm-link">Atlas</a>
+  <a href="teklif.html" class="nm-cta">Teklif Al →</a>
+</div>
+
+<!-- HERO -->
+<section class="teklif-hero">
+  <div class="th-content">
+    <div class="hero-eyebrow">Atlas ile Saniyeler İçinde</div>
+    <h1 class="th-title">Sana özel<br><span class="accent">teklif.</span></h1>
+    <p class="th-sub">Birkaç soruya cevap ver, Atlas en iyi seçenekleri senin için bulsun.</p>
+  </div>
+  <div class="th-atlas">
+    <svg width="120" height="140" viewBox="0 0 220 260" fill="none">
+      <ellipse cx="110" cy="248" rx="55" ry="11" fill="rgba(26,86,219,0.18)"/>
+      <path d="M110 20 C110 20 48 72 48 138 C48 176 75 205 110 208 C145 205 172 176 172 138 C172 72 110 20 110 20Z" fill="url(#ta)"/>
+      <ellipse cx="88" cy="105" rx="16" ry="26" fill="rgba(255,255,255,0.22)" transform="rotate(-20 88 105)"/>
+      <ellipse cx="92" cy="148" rx="10" ry="9" fill="white"/>
+      <circle cx="94" cy="149" r="5.5" fill="#0A1628"/><circle cx="96" cy="147" r="1.8" fill="white"/>
+      <ellipse cx="128" cy="148" rx="10" ry="9" fill="white"/>
+      <circle cx="130" cy="149" r="5.5" fill="#0A1628"/><circle cx="132" cy="147" r="1.8" fill="white"/>
+      <path d="M100 170 Q110 178 120 170" stroke="white" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+      <path d="M52 140 Q34 128 38 112" stroke="url(#ta1)" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <circle cx="37" cy="110" r="7" fill="url(#ta1)"/>
+      <path d="M168 140 Q186 128 182 112" stroke="url(#ta2)" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <circle cx="183" cy="110" r="7" fill="url(#ta2)"/>
+      <defs>
+        <linearGradient id="ta" x1="48" y1="20" x2="172" y2="208" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#60A5FA"/><stop offset="55%" stop-color="#2563EB"/><stop offset="100%" stop-color="#1A40A8"/>
+        </linearGradient>
+        <linearGradient id="ta1" x1="52" y1="140" x2="34" y2="108" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#60A5FA"/>
+        </linearGradient>
+        <linearGradient id="ta2" x1="168" y1="140" x2="186" y2="108" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#60A5FA"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+<!-- FORM SECTION -->
+<section class="form-section">
+  <div class="form-container">
+
+    <!-- Step indicator -->
+    <div class="steps" id="steps">
+      <div class="step active" data-step="1"><span class="step-num">1</span><span class="step-lbl">Sigorta Türü</span></div>
+      <div class="step-line"></div>
+      <div class="step" data-step="2"><span class="step-num">2</span><span class="step-lbl">Bilgiler</span></div>
+      <div class="step-line"></div>
+      <div class="step" data-step="3"><span class="step-num">3</span><span class="step-lbl">İletişim</span></div>
+    </div>
+
+    <!-- STEP 1: Sigorta Türü -->
+    <div class="form-step active" id="step1">
+      <h2 class="step-title">Hangi sigorta için<br>teklif almak istiyorsunuz?</h2>
+      <div class="type-grid">
+        <label class="type-card">
+          <input type="radio" name="sigortaTuru" value="kasko">
+          <div class="type-inner">
+            <div class="type-icon">🚗</div>
+            <div class="type-name">Kasko</div>
+          </div>
+        </label>
+        <label class="type-card">
+          <input type="radio" name="sigortaTuru" value="trafik">
+          <div class="type-inner">
+            <div class="type-icon">🛣️</div>
+            <div class="type-name">Trafik</div>
+          </div>
+        </label>
+        <label class="type-card">
+          <input type="radio" name="sigortaTuru" value="konut">
+          <div class="type-inner">
+            <div class="type-icon">🏠</div>
+            <div class="type-name">Konut</div>
+          </div>
+        </label>
+        <label class="type-card">
+          <input type="radio" name="sigortaTuru" value="saglik">
+          <div class="type-inner">
+            <div class="type-icon">❤️</div>
+            <div class="type-name">Sağlık</div>
+          </div>
+        </label>
+        <label class="type-card">
+          <input type="radio" name="sigortaTuru" value="seyahat">
+          <div class="type-inner">
+            <div class="type-icon">✈️</div>
+            <div class="type-name">Seyahat</div>
+          </div>
+        </label>
+        <label class="type-card">
+          <input type="radio" name="sigortaTuru" value="isyeri">
+          <div class="type-inner">
+            <div class="type-icon">💼</div>
+            <div class="type-name">İşyeri</div>
+          </div>
+        </label>
+        <label class="type-card">
+          <input type="radio" name="sigortaTuru" value="evcil">
+          <div class="type-inner">
+            <div class="type-icon">🐾</div>
+            <div class="type-name">Evcil Hayvan</div>
+          </div>
+        </label>
+        <label class="type-card">
+          <input type="radio" name="sigortaTuru" value="diger">
+          <div class="type-inner">
+            <div class="type-icon">➕</div>
+            <div class="type-name">Diğer</div>
+          </div>
+        </label>
+      </div>
+      <div class="step-actions">
+        <button class="btn-primary" id="toStep2" disabled>Devam Et →</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: Bilgiler -->
+    <div class="form-step" id="step2">
+      <h2 class="step-title">Biraz daha bilgi<br>verir misiniz?</h2>
+      <div class="form-fields" id="dynamicFields">
+        <!-- JS ile doldurulacak -->
+      </div>
+      <div class="step-actions">
+        <button class="btn-secondary" id="backToStep1">← Geri</button>
+        <button class="btn-primary" id="toStep3">Devam Et →</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: İletişim -->
+    <div class="form-step" id="step3">
+      <h2 class="step-title">Son adım —<br>sizi arayalım.</h2>
+      <div class="form-fields">
+        <div class="field-group">
+          <label class="field-label">Ad Soyad</label>
+          <input class="field-input" type="text" id="adSoyad" placeholder="Ahmet Yılmaz">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Telefon</label>
+          <input class="field-input" type="tel" id="telefon" placeholder="0532 123 45 67">
+        </div>
+        <div class="field-group">
+          <label class="field-label">E-posta</label>
+          <input class="field-input" type="email" id="eposta" placeholder="ahmet@ornek.com">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Ek notlar (isteğe bağlı)</label>
+          <textarea class="field-input" id="notlar" rows="3" placeholder="Özel bir isteğiniz varsa yazabilirsiniz..."></textarea>
+        </div>
+        <label class="checkbox-label">
+          <input type="checkbox" id="kvkk">
+          <span>KVKK kapsamında kişisel verilerimin işlenmesine onay veriyorum.</span>
+        </label>
+      </div>
+      <div class="step-actions">
+        <button class="btn-secondary" id="backToStep2">← Geri</button>
+        <button class="btn-primary" id="submitBtn">Teklif İste →</button>
+      </div>
+    </div>
+
+    <!-- SUCCESS -->
+    <div class="form-step" id="stepSuccess">
+      <div class="success-inner">
+        <div class="success-icon">
+          <svg width="80" height="94" viewBox="0 0 220 260" fill="none">
+            <path d="M110 20 C110 20 48 72 48 138 C48 176 75 205 110 208 C145 205 172 176 172 138 C172 72 110 20 110 20Z" fill="url(#succ)"/>
+            <ellipse cx="92" cy="148" rx="10" ry="9" fill="white"/>
+            <circle cx="94" cy="149" r="5.5" fill="#0A1628"/><circle cx="96" cy="147" r="1.8" fill="white"/>
+            <ellipse cx="128" cy="148" rx="10" ry="9" fill="white"/>
+            <circle cx="130" cy="149" r="5.5" fill="#0A1628"/><circle cx="132" cy="147" r="1.8" fill="white"/>
+            <path d="M96 168 Q110 182 124 168" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <ellipse cx="80" cy="160" rx="10" ry="5" fill="rgba(147,197,253,0.28)"/>
+            <ellipse cx="140" cy="160" rx="10" ry="5" fill="rgba(147,197,253,0.28)"/>
+            <defs>
+              <linearGradient id="succ" x1="48" y1="20" x2="172" y2="208" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#60A5FA"/><stop offset="100%" stop-color="#1A40A8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h2>Harika! Talebinizi aldık. 🎉</h2>
+        <p>Atlas teklifinizi hazırlıyor. En kısa sürede sizi arayacağız.</p>
+        <div class="success-info">
+          <div class="si-item">⏱️ Ortalama geri dönüş süresi: <strong>15 dakika</strong></div>
+          <div class="si-item">📱 Sizi <strong id="successPhone">—</strong> numarasından arayacağız.</div>
+        </div>
+        <a href="index.html" class="btn-secondary" style="margin-top:8px;">Ana Sayfaya Dön</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Yan panel: Neden Rem -->
+  <div class="form-sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-title">Neden Rem Sigorta?</div>
+      <div class="sidebar-items">
+        <div class="si-row"><span class="si-icon">⚡</span><span>Dakikalar içinde teklif</span></div>
+        <div class="si-row"><span class="si-icon">🔍</span><span>Şeffaf fiyatlandırma</span></div>
+        <div class="si-row"><span class="si-icon">🤖</span><span>Atlas yapay zeka desteği</span></div>
+        <div class="si-row"><span class="si-icon">🤝</span><span>Uzman danışman ekibi</span></div>
+        <div class="si-row"><span class="si-icon">🛡️</span><span>%100 güvenli işlem</span></div>
+        <div class="si-row"><span class="si-icon">📞</span><span>7/24 müşteri desteği</span></div>
+      </div>
+    </div>
+
+    <div class="sidebar-card atlas-chat-mini">
+      <div class="atlas-mini-header">
+        <svg width="32" height="37" viewBox="0 0 220 260" fill="none">
+          <path d="M110 20 C110 20 48 72 48 138 C48 176 75 205 110 208 C145 205 172 176 172 138 C172 72 110 20 110 20Z" fill="url(#sm)"/>
+          <ellipse cx="92" cy="148" rx="9" ry="8" fill="white"/>
+          <circle cx="94" cy="149" r="5" fill="#0A1628"/><circle cx="96" cy="147" r="1.5" fill="white"/>
+          <ellipse cx="128" cy="148" rx="9" ry="8" fill="white"/>
+          <circle cx="130" cy="149" r="5" fill="#0A1628"/><circle cx="132" cy="147" r="1.5" fill="white"/>
+          <path d="M100 170 Q110 178 120 170" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <defs>
+            <linearGradient id="sm" x1="48" y1="20" x2="172" y2="208" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#60A5FA"/><stop offset="100%" stop-color="#1A40A8"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Atlas</span>
+      </div>
+      <p class="atlas-mini-msg">"Merak etme, sana en uygun teklifi bulmak için sabırsızlanıyorum. 💧"</p>
+    </div>
+
+    <div class="sidebar-trust">
+      <div class="trust-item">★★★★★ <span>4.9/5 müşteri puanı</span></div>
+      <div class="trust-item">🏛️ <span>Bakanlık lisanslı acente</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html">
+          <svg width="28" height="28" viewBox="0 0 72 72" fill="none">
+            <rect width="72" height="72" rx="14" fill="white"/>
+            <rect x="16" y="14" width="7" height="44" fill="#08111F"/>
+            <path d="M16 14 H38 Q50 14 50 25.5 Q50 37 38 37 H16Z" fill="#08111F"/>
+            <path d="M23 20 H36 Q43 20 43 25.5 Q43 31 36 31 H23Z" fill="white"/>
+            <path d="M33 37 L50 37 L50 58 L42 58 L26 37Z" fill="#08111F"/>
+            <circle cx="58" cy="56" r="5" fill="#3B82F6"/>
+          </svg>
+          <div class="nav-brand">rem<span class="dot">.</span></div>
+        </a>
+        <p>Yeni nesil dijital sigorta acentesi.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Sayfalar</h4>
+          <a href="index.html">Hakkımızda</a>
+          <a href="atlas.html">Atlas</a>
+          <a href="teklif.html">Teklif Al</a>
+        </div>
+        <div class="footer-col">
+          <h4>İletişim</h4>
+          <a href="mailto:info@remsigorta.com">info@remsigorta.com</a>
+          <a href="tel:+908501234567">0850 123 45 67</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Rem Sigorta. Tüm hakları saklıdır.</p>
+      <p>Hazine ve Maliye Bakanlığı Lisanslı Sigorta Acentesi</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/teklif.js"></script>
+</body>
+</html>
